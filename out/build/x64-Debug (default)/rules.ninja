@@ -47,7 +47,7 @@ rule CXX_EXECUTABLE_LINKER__Tema_1_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\MasterEnergy\Desktop\Facultate\Programare orientata pe obiecte\Laborator\Tema\Tema_1" -B"C:\Users\MasterEnergy\Desktop\Facultate\Programare orientata pe obiecte\Laborator\Tema\Tema_1\out\build\x64-Debug (default)"
+  command = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\MasterEnergy\Desktop\Facultate\Programare orientata pe obiecte\Laborator\Tema\Repo" -B"C:\Users\MasterEnergy\Desktop\Facultate\Programare orientata pe obiecte\Laborator\Tema\Repo\out\build\x64-Debug (default)"
   description = Re-running CMake...
   generator = 1
 

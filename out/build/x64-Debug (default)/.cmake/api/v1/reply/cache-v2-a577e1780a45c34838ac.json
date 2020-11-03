@@ -23,7 +23,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Tema_1/out/build/x64-Debug (default)"
+			"value" : "c:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Repo/out/build/x64-Debug (default)"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -499,7 +499,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Tema_1"
+			"value" : "C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Repo"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Tema_1/out/install/x64-Debug (default)"
+			"value" : "C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Repo/out/install/x64-Debug (default)"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1035,7 +1035,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Tema_1/out/build/x64-Debug (default)"
+			"value" : "C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Repo/out/build/x64-Debug (default)"
 		},
 		{
 			"name" : "Tema_1_SOURCE_DIR",
@@ -1047,7 +1047,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Tema_1"
+			"value" : "C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Repo"
 		}
 	],
 	"kind" : "cache",
