@@ -10,18 +10,8 @@ public:
 	carte(carte& cc);
 	~carte();
 	carte& operator=(const carte& eop);
-	friend std::ostream& operator<<(std::ostream& out, const carte& carte)
-	{
-		out << "Nume carte: " << carte.nume_carte << std::endl;
-		out << "Numar pagini: " << carte.nr_pagini << std::endl;
-		out << "Numar volum: " << carte.nr_volum << std::endl;
-		return out;
-	}
-	void afisare()
-	{
-		std::cout << nume_carte << std::endl << "Volum: " << nr_volum << std::endl << "Numar pagini: " << nr_pagini << std::endl;
-
-	}
+	friend std::ostream& operator<<(std::ostream& out, const carte& carte);
+	void afisare();
 };
 
 carte::carte(std::string nume_carte, int nr_pagini, int nr_volum)
@@ -56,6 +46,19 @@ carte& carte::operator=(const carte& eop)
 	return *this;
 }
 
+void carte::afisare()
+{
+	std::cout << nume_carte << std::endl << "Volum: " << nr_volum << std::endl << "Numar pagini: " << nr_pagini << std::endl;
+}
+
+std::ostream& operator<<(std::ostream& out, const carte& carte)
+{
+	out << "Nume carte: " << carte.nume_carte << std::endl;
+	out << "Numar pagini: " << carte.nr_pagini << std::endl;
+	out << "Numar volum: " << carte.nr_volum << std::endl;
+	return out;
+}
+
 class editura
 {
 private:
@@ -65,16 +68,8 @@ public:
 	editura(editura& cc);
 	~editura();
 	editura& operator=(const editura& eop);
-	friend std::ostream& operator<<(std::ostream& out, const editura& editura)
-	{
-		out << "Nume editura: " << editura.nume_editura << std::endl;
-		return out;
-	}
-	void afisare()
-	{
-		std::cout << "Editura: " << nume_editura << std::endl;
-
-	}
+	friend std::ostream& operator<<(std::ostream& out, const editura& editura);
+	void afisare();
 };
 
 editura::editura(std::string nume_editura)
@@ -101,6 +96,17 @@ editura& editura::operator=(const editura& eop)
 	return *this;
 }
 
+void editura::afisare()
+{
+	std::cout << "Editura: " << nume_editura << std::endl;
+}
+
+std::ostream& operator<<(std::ostream& out, const editura& editura)
+{
+	out << "Nume editura: " << editura.nume_editura << std::endl;
+	return out;
+}
+
 class autor
 {
 private:
@@ -110,16 +116,8 @@ public:
 	autor(autor& cc);
 	~autor();
 	autor& operator=(const autor& eop);
-	friend std::ostream& operator<<(std::ostream& out, const autor& autor)
-	{
-		out << "Nume autor: " << autor.nume_autor << std::endl;
-		return out;
-	}
-	void afisare()
-	{
-		std::cout << "Autor: " << nume_autor << std::endl;
-
-	}
+	friend std::ostream& operator<<(std::ostream& out, const autor& autor);
+	void afisare();
 };
 
 autor::autor(std::string nume_autor)
@@ -144,6 +142,17 @@ autor& autor::operator=(const autor& eop)
 	std::cout << "Operator=(autor) " << nume_autor << " " << eop.nume_autor << std::endl;
 	this->nume_autor = eop.nume_autor;
 	return *this;
+}
+
+void autor::afisare()
+{
+	std::cout << "Autor: " << nume_autor << std::endl;
+}
+
+std::ostream& operator<<(std::ostream& out, const autor& autor)
+{
+	out << "Nume autor: " << autor.nume_autor << std::endl;
+	return out;
 }
 
 int main()
