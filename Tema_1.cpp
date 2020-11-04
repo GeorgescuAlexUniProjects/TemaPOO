@@ -139,7 +139,7 @@ autor::~autor()
 
 autor& autor::operator=(const autor& eop)
 {
-	std::cout << "Operator=(Nume autor) " << nume_autor << " " << eop.nume_autor << std::endl;
+	std::cout << "Operator=(Nume autor) " << nume_autor << "=" << eop.nume_autor << std::endl;
 	this->nume_autor = eop.nume_autor;
 	return *this;
 }
