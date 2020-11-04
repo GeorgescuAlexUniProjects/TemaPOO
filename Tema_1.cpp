@@ -4,9 +4,9 @@ class carte
 {
 private:
 	std::string nume_carte;
-	int nr_pagini,nr_volum;
+	int nr_volum, nr_pagini;
 public:
-	carte(std::string nume_carte, int nr_pagini, int nr_volum);
+	carte(std::string nume_carte, int nr_volum, int nr_pagini);
 	carte(carte& cc);
 	~carte();
 	carte& operator=(const carte& eop);
@@ -14,19 +14,19 @@ public:
 	void afisare();
 };
 
-carte::carte(std::string nume_carte, int nr_pagini, int nr_volum)
+carte::carte(std::string nume_carte, int nr_volum, int nr_pagini)
 {
 	this->nume_carte = nume_carte;
-	this->nr_pagini = nr_pagini;
 	this->nr_volum = nr_volum;
+	this->nr_pagini = nr_pagini;
 	std::cout << "Constructor carte" << std::endl;
 }
 
 carte::carte(carte& cc)
 {
 	this->nume_carte = cc.nume_carte;
-	this->nr_pagini = cc.nr_pagini;
 	this->nr_volum = cc.nr_volum;
+	this->nr_pagini = cc.nr_pagini;
 	std::cout << "Constructor copiere carte" << std::endl;
 }
 
@@ -37,12 +37,12 @@ carte::~carte()
 
 carte& carte::operator=(const carte& eop)
 {
-	std::cout << "Operator=(carte) " << nume_carte << " " << eop.nume_carte << std::endl;
+	std::cout << "Operator=(Nume carete) " << nume_carte << "=" << eop.nume_carte << std::endl;
 	this->nume_carte = eop.nume_carte;
-	std::cout << "Operator=(carte) " << nr_pagini << " " << eop.nr_pagini << std::endl;
-	this->nr_pagini = eop.nr_pagini;
-	std::cout << "Operator=(carte) " << nr_volum << " " << eop.nr_volum << std::endl;
+	std::cout << "Operator=(Numar volum) " << nr_volum << "=" << eop.nr_volum << std::endl;
 	this->nr_volum = eop.nr_volum;
+	std::cout << "Operator=(Numar pagini) " << nr_pagini << "=" << eop.nr_pagini << std::endl;
+	this->nr_pagini = eop.nr_pagini;
 	return *this;
 }
 
@@ -53,9 +53,9 @@ void carte::afisare()
 
 std::ostream& operator<<(std::ostream& out, const carte& carte)
 {
-	out << "Nume carte: " << carte.nume_carte << std::endl;
-	out << "Numar pagini: " << carte.nr_pagini << std::endl;
-	out << "Numar volum: " << carte.nr_volum << std::endl;
+	out << "Operator<<(Nume carete) " << carte.nume_carte << std::endl;
+	out << "Operator<<(Numar volum)  " << carte.nr_volum << std::endl;
+	out << "Operator<<(Numar pagini)  " << carte.nr_pagini << std::endl;
 	return out;
 }
 
@@ -91,7 +91,7 @@ editura::~editura()
 
 editura& editura::operator=(const editura& eop)
 {
-	std::cout << "Operator=(editura) " << nume_editura << " " << eop.nume_editura << std::endl;
+	std::cout << "Operator=(Nume editura) " << nume_editura << "=" << eop.nume_editura << std::endl;
 	this->nume_editura = eop.nume_editura;
 	return *this;
 }
@@ -103,7 +103,7 @@ void editura::afisare()
 
 std::ostream& operator<<(std::ostream& out, const editura& editura)
 {
-	out << "Nume editura: " << editura.nume_editura << std::endl;
+	out << "Operator<<(Nume editura) " << editura.nume_editura << std::endl;
 	return out;
 }
 
@@ -139,7 +139,7 @@ autor::~autor()
 
 autor& autor::operator=(const autor& eop)
 {
-	std::cout << "Operator=(autor) " << nume_autor << " " << eop.nume_autor << std::endl;
+	std::cout << "Operator=(Nume autor) " << nume_autor << " " << eop.nume_autor << std::endl;
 	this->nume_autor = eop.nume_autor;
 	return *this;
 }
@@ -151,7 +151,7 @@ void autor::afisare()
 
 std::ostream& operator<<(std::ostream& out, const autor& autor)
 {
-	out << "Nume autor: " << autor.nume_autor << std::endl;
+	out << "Operator<<(Nume autor) " << autor.nume_autor << std::endl;
 	return out;
 }
 
@@ -160,6 +160,18 @@ int main()
 	carte c("Overlord",12, 288);
 	editura e("Yen Press");
 	autor a("Kugane Maruyama");
+	carte c1 = c;
+	carte c2("c", 1, 1);
+	c2 = c;
+	std::cout << c;
+	editura e1 = e;
+	editura e2("e");
+	e2 = e;
+	std::cout << e;
+	autor a1 = a;
+	autor a2("a");
+	a2 = a;
+	std::cout << a;
 	c.afisare();
 	e.afisare();
 	a.afisare();
