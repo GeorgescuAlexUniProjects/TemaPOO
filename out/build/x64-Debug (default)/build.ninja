@@ -61,6 +61,27 @@ build CMakeFiles\Tema_1.dir\Tema_1.cpp.obj: CXX_COMPILER__Tema_1_Debug ..\..\..\
   TARGET_COMPILE_PDB = CMakeFiles\Tema_1.dir\
   TARGET_PDB = Tema_1.pdb
 
+build CMakeFiles\Tema_1.dir\carte.cpp.obj: CXX_COMPILER__Tema_1_Debug ..\..\..\carte.cpp || cmake_object_order_depends_target_Tema_1_Debug
+  FLAGS = -Wall -pedantic /MDd /Zi /Ob0 /Od /RTC1   -std:c++14
+  OBJECT_DIR = CMakeFiles\Tema_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tema_1.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Tema_1.dir\
+  TARGET_PDB = Tema_1.pdb
+
+build CMakeFiles\Tema_1.dir\editura.cpp.obj: CXX_COMPILER__Tema_1_Debug ..\..\..\editura.cpp || cmake_object_order_depends_target_Tema_1_Debug
+  FLAGS = -Wall -pedantic /MDd /Zi /Ob0 /Od /RTC1   -std:c++14
+  OBJECT_DIR = CMakeFiles\Tema_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tema_1.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Tema_1.dir\
+  TARGET_PDB = Tema_1.pdb
+
+build CMakeFiles\Tema_1.dir\autor.cpp.obj: CXX_COMPILER__Tema_1_Debug ..\..\..\autor.cpp || cmake_object_order_depends_target_Tema_1_Debug
+  FLAGS = -Wall -pedantic /MDd /Zi /Ob0 /Od /RTC1   -std:c++14
+  OBJECT_DIR = CMakeFiles\Tema_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tema_1.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Tema_1.dir\
+  TARGET_PDB = Tema_1.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Tema_1
@@ -69,7 +90,7 @@ build CMakeFiles\Tema_1.dir\Tema_1.cpp.obj: CXX_COMPILER__Tema_1_Debug ..\..\..\
 #############################################
 # Link the executable Tema_1.exe
 
-build Tema_1.exe: CXX_EXECUTABLE_LINKER__Tema_1_Debug CMakeFiles\Tema_1.dir\Tema_1.cpp.obj
+build Tema_1.exe: CXX_EXECUTABLE_LINKER__Tema_1_Debug CMakeFiles\Tema_1.dir\Tema_1.cpp.obj CMakeFiles\Tema_1.dir\carte.cpp.obj CMakeFiles\Tema_1.dir\editura.cpp.obj CMakeFiles\Tema_1.dir\autor.cpp.obj
   FLAGS = -Wall -pedantic /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
