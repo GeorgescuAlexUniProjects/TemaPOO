@@ -269,18 +269,18 @@
             <td class="headerValue">Tema_1.cpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">41</td>
-            <td class="headerTableEntry">79</td>
-            <td class="headerTableEntry" style="background-color:LightPink">51.9 %</td>
+            <td class="headerTableEntry">94</td>
+            <td class="headerTableEntry">94</td>
+            <td class="headerTableEntry" style="background-color:LightGreen">100.0 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2020-11-03 12:10:30</td>
+            <td class="headerValue">2020-11-04 08:34:06</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">20</td>
-            <td class="headerTableEntry">58</td>
-            <td class="headerTableEntry" style="background-color:LightPink">34.5 %</td>
+            <td class="headerTableEntry">44</td>
+            <td class="headerTableEntry">88</td>
+            <td class="headerTableEntry" style="background-color:LightPink">50.0 %</td>
           </tr>
         </table>
       </td>
@@ -345,7 +345,7 @@
     <td align="right" class="lineno"><pre>7</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	int nr_pagini,nr_volum;</pre></td>
+    <td align="left" class="src "><pre>	int nr_volum, nr_pagini;</pre></td>
     </tr>
 
     <tr>
@@ -359,7 +359,7 @@
     <td align="right" class="lineno"><pre>9</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	carte(std::string nume_carte, int nr_pagini, int nr_volum);</pre></td>
+    <td align="left" class="src "><pre>	carte(std::string nume_carte, int nr_volum, int nr_pagini);</pre></td>
     </tr>
 
     <tr>
@@ -414,8 +414,8 @@
     <tr>
     <td align="right" class="lineno"><pre>17</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
-    <td align="left" class="src coveredLine"><pre>carte::carte(std::string nume_carte, int nr_pagini, int nr_volum)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>carte::carte(std::string nume_carte, int nr_volum, int nr_pagini)</pre></td>
     </tr>
 
     <tr>
@@ -427,36 +427,36 @@
 
     <tr>
     <td align="right" class="lineno"><pre>19</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>	this-&gt;nume_carte = nume_carte;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>20</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
-    <td align="left" class="src coveredLine"><pre>	this-&gt;nr_pagini = nr_pagini;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nr_volum = nr_volum;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>21</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
-    <td align="left" class="src coveredLine"><pre>	this-&gt;nr_volum = nr_volum;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nr_pagini = nr_pagini;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>22</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Constructor carte" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>23</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
@@ -470,8 +470,8 @@
     <tr>
     <td align="right" class="lineno"><pre>25</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>carte::carte(carte&amp; cc)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>carte::carte(carte&amp; cc)</pre></td>
     </tr>
 
     <tr>
@@ -483,37 +483,37 @@
 
     <tr>
     <td align="right" class="lineno"><pre>27</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nume_carte = cc.nume_carte;</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nume_carte = cc.nume_carte;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>28</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nr_pagini = cc.nr_pagini;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nr_volum = cc.nr_volum;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>29</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nr_volum = cc.nr_volum;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nr_pagini = cc.nr_pagini;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>30</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "Constructor copiere carte" &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Constructor copiere carte" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>31</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -526,7 +526,7 @@
     <tr>
     <td align="right" class="lineno"><pre>33</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
     <td align="left" class="src coveredLine"><pre>carte::~carte()</pre></td>
     </tr>
 
@@ -540,14 +540,14 @@
     <tr>
     <td align="right" class="lineno"><pre>35</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3</pre></td>
     <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Destructor carte" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>36</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3</pre></td>
     <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
@@ -561,8 +561,8 @@
     <tr>
     <td align="right" class="lineno"><pre>38</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>carte&amp; carte::operator=(const carte&amp; eop)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>carte&amp; carte::operator=(const carte&amp; eop)</pre></td>
     </tr>
 
     <tr>
@@ -575,50 +575,50 @@
     <tr>
     <td align="right" class="lineno"><pre>40</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "Operator=(carte) " &lt;&lt; nume_carte &lt;&lt; " " &lt;&lt; eop.nume_carte &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Operator=(Nume carete) " &lt;&lt; nume_carte &lt;&lt; "=" &lt;&lt; eop.nume_carte &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>41</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nume_carte = eop.nume_carte;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nume_carte = eop.nume_carte;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>42</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "Operator=(carte) " &lt;&lt; nr_pagini &lt;&lt; " " &lt;&lt; eop.nr_pagini &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Operator=(Numar volum) " &lt;&lt; nr_volum &lt;&lt; "=" &lt;&lt; eop.nr_volum &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>43</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nr_pagini = eop.nr_pagini;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nr_volum = eop.nr_volum;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>44</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "Operator=(carte) " &lt;&lt; nr_volum &lt;&lt; " " &lt;&lt; eop.nr_volum &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Operator=(Numar pagini) " &lt;&lt; nr_pagini &lt;&lt; "=" &lt;&lt; eop.nr_pagini &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>45</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nr_volum = eop.nr_volum;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nr_pagini = eop.nr_pagini;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>46</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return *this;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return *this;</pre></td>
     </tr>
 
     <tr>
@@ -673,8 +673,8 @@
     <tr>
     <td align="right" class="lineno"><pre>54</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, const carte&amp; carte)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, const carte&amp; carte)</pre></td>
     </tr>
 
     <tr>
@@ -687,29 +687,29 @@
     <tr>
     <td align="right" class="lineno"><pre>56</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	out &lt;&lt; "Nume carte: " &lt;&lt; carte.nume_carte &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	out &lt;&lt; "Operator&lt;&lt;(Nume carete) " &lt;&lt; carte.nume_carte &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>57</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	out &lt;&lt; "Numar pagini: " &lt;&lt; carte.nr_pagini &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	out &lt;&lt; "Operator&lt;&lt;(Numar volum)  " &lt;&lt; carte.nr_volum &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>58</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	out &lt;&lt; "Numar volum: " &lt;&lt; carte.nr_volum &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	out &lt;&lt; "Operator&lt;&lt;(Numar pagini)  " &lt;&lt; carte.nr_pagini &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>59</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return out;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return out;</pre></td>
     </tr>
 
     <tr>
@@ -820,7 +820,7 @@
     <tr>
     <td align="right" class="lineno"><pre>75</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>editura::editura(std::string nume_editura)</pre></td>
     </tr>
 
@@ -833,22 +833,22 @@
 
     <tr>
     <td align="right" class="lineno"><pre>77</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>	this-&gt;nume_editura = nume_editura;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>78</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Constructor editura" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>79</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
@@ -862,8 +862,8 @@
     <tr>
     <td align="right" class="lineno"><pre>81</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>editura::editura(editura&amp; cc)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>editura::editura(editura&amp; cc)</pre></td>
     </tr>
 
     <tr>
@@ -875,23 +875,23 @@
 
     <tr>
     <td align="right" class="lineno"><pre>83</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nume_editura = cc.nume_editura;</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nume_editura = cc.nume_editura;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>84</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "Constructor copiere editura" &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Constructor copiere editura" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -904,7 +904,7 @@
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
     <td align="left" class="src coveredLine"><pre>editura::~editura()</pre></td>
     </tr>
 
@@ -918,14 +918,14 @@
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3</pre></td>
     <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Destructor editura" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>90</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3</pre></td>
     <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
@@ -939,8 +939,8 @@
     <tr>
     <td align="right" class="lineno"><pre>92</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>editura&amp; editura::operator=(const editura&amp; eop)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>editura&amp; editura::operator=(const editura&amp; eop)</pre></td>
     </tr>
 
     <tr>
@@ -953,22 +953,22 @@
     <tr>
     <td align="right" class="lineno"><pre>94</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "Operator=(editura) " &lt;&lt; nume_editura &lt;&lt; " " &lt;&lt; eop.nume_editura &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Operator=(Nume editura) " &lt;&lt; nume_editura &lt;&lt; "=" &lt;&lt; eop.nume_editura &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>95</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nume_editura = eop.nume_editura;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nume_editura = eop.nume_editura;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>96</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return *this;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return *this;</pre></td>
     </tr>
 
     <tr>
@@ -1023,8 +1023,8 @@
     <tr>
     <td align="right" class="lineno"><pre>104</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, const editura&amp; editura)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, const editura&amp; editura)</pre></td>
     </tr>
 
     <tr>
@@ -1037,15 +1037,15 @@
     <tr>
     <td align="right" class="lineno"><pre>106</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	out &lt;&lt; "Nume editura: " &lt;&lt; editura.nume_editura &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	out &lt;&lt; "Operator&lt;&lt;(Nume editura) " &lt;&lt; editura.nume_editura &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>107</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return out;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return out;</pre></td>
     </tr>
 
     <tr>
@@ -1156,7 +1156,7 @@
     <tr>
     <td align="right" class="lineno"><pre>123</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>autor::autor(std::string nume_autor)</pre></td>
     </tr>
 
@@ -1169,22 +1169,22 @@
 
     <tr>
     <td align="right" class="lineno"><pre>125</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>	this-&gt;nume_autor = nume_autor;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>126</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Constructor autor" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>127</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
     <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
@@ -1198,8 +1198,8 @@
     <tr>
     <td align="right" class="lineno"><pre>129</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>autor::autor(autor&amp; cc)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>autor::autor(autor&amp; cc)</pre></td>
     </tr>
 
     <tr>
@@ -1211,23 +1211,23 @@
 
     <tr>
     <td align="right" class="lineno"><pre>131</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nume_autor = cc.nume_autor;</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nume_autor = cc.nume_autor;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>132</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "Constructor copiere autor" &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Constructor copiere autor" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>133</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -1240,7 +1240,7 @@
     <tr>
     <td align="right" class="lineno"><pre>135</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
     <td align="left" class="src coveredLine"><pre>autor::~autor()</pre></td>
     </tr>
 
@@ -1254,14 +1254,14 @@
     <tr>
     <td align="right" class="lineno"><pre>137</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3</pre></td>
     <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Destructor autor" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>138</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3</pre></td>
     <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
@@ -1275,8 +1275,8 @@
     <tr>
     <td align="right" class="lineno"><pre>140</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>autor&amp; autor::operator=(const autor&amp; eop)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>autor&amp; autor::operator=(const autor&amp; eop)</pre></td>
     </tr>
 
     <tr>
@@ -1289,22 +1289,22 @@
     <tr>
     <td align="right" class="lineno"><pre>142</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "Operator=(autor) " &lt;&lt; nume_autor &lt;&lt; " " &lt;&lt; eop.nume_autor &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; "Operator=(Nume autor) " &lt;&lt; nume_autor &lt;&lt; " " &lt;&lt; eop.nume_autor &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>143</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	this-&gt;nume_autor = eop.nume_autor;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	this-&gt;nume_autor = eop.nume_autor;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>144</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return *this;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return *this;</pre></td>
     </tr>
 
     <tr>
@@ -1359,8 +1359,8 @@
     <tr>
     <td align="right" class="lineno"><pre>152</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, const autor&amp; autor)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, const autor&amp; autor)</pre></td>
     </tr>
 
     <tr>
@@ -1373,15 +1373,15 @@
     <tr>
     <td align="right" class="lineno"><pre>154</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	out &lt;&lt; "Nume autor: " &lt;&lt; autor.nume_autor &lt;&lt; std::endl;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	out &lt;&lt; "Operator&lt;&lt;(Nume autor) " &lt;&lt; autor.nume_autor &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>155</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return out;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return out;</pre></td>
     </tr>
 
     <tr>
@@ -1436,33 +1436,117 @@
     <tr>
     <td align="right" class="lineno"><pre>163</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
-    <td align="left" class="src coveredLine"><pre>	c.afisare();</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	carte c1 = c;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>164</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
-    <td align="left" class="src coveredLine"><pre>	e.afisare();</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	carte c2("c", 1, 1);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>165</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>1</pre></td>
-    <td align="left" class="src coveredLine"><pre>	a.afisare();</pre></td>
+    <td align="left" class="src coveredLine"><pre>	c2 = c;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>166</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; c;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>167</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	editura e1 = e;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>168</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	editura e2("e");</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>169</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	e2 = e;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>170</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; e;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>171</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	autor a1 = a;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>172</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	autor a2("a");</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>173</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	a2 = a;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>174</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	std::cout &lt;&lt; a;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>175</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	c.afisare();</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>176</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	e.afisare();</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>177</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>	a.afisare();</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>178</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount coveredLine"><pre>1</pre></td>
     <td align="left" class="src coveredLine"><pre>	return 0;</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>167</pre></td>
+    <td align="right" class="lineno"><pre>179</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 3 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/></td>
     <td align="right" class="linecount coveredLine"><pre>3</pre></td>
     <td align="left" class="src coveredLine"><pre>}</pre></td>
