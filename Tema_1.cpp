@@ -1,4 +1,4 @@
-﻿#include "Tema_1.h"
+#include "Tema_1.h"
 #include "carte.h"
 #include "editura.h"
 #include "autor.h"
