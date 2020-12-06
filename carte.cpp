@@ -64,10 +64,10 @@ float carte::Medie_rating(float medie_rating)
 	{
 		if (medie_rating < 0 || medie_rating > 10)
 		{
-			throw medie_rating;
+			throw std::exception("");
 		}
 	}
-	catch (float medie_rating)
+	catch (std::exception& err_medie_rating)
 	{
 		std::cout << "Exceptie pe valoare: " << medie_rating << std::endl;
 		if (medie_rating < 10)
@@ -78,6 +78,8 @@ float carte::Medie_rating(float medie_rating)
 		{
 			std::cout << "Medie rating-ul este prea mica";
 		}
+		std::cerr << err_medie_rating.what() << std::endl;
+		return -1;
 	}
 	return medie_rating;
 }
@@ -89,12 +91,14 @@ float carte::Medie_pagini(float medie_pagini, int nr_pagini_total)
 	{
 		if (medie_pagini < 0)
 		{
-			throw medie_pagini;
+			throw std::exception("");
 		}
 	}
-	catch (float medie_pagini)
+	catch (std::exception& err_medie_pagini)
 	{
 		std::cout << "Exceptie in calcul medie paginilor: " << medie_pagini << std::endl << "Media de pagini este negativa";
+		std::cerr << err_medie_pagini.what() << std::endl;
+		return -1;
 	}
 	return medie_pagini;
 }
