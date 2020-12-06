@@ -5,19 +5,24 @@
 
 int main()
 {
-	carte c("Overlord",12, 288);
+	int nr_volume = 4;
+	std::vector<int> nr_pagini_vol = { 288 , 241 , 300 , 341 };
+	std::vector<float> rating_vol = { 8.5 , 9 , 7.5 , 9.5 };
+	int nr_pagini_total = 0;
+	float medie_rating = 0, medie_pagini = 0;
+	carte c("Overlord", nr_volume, nr_pagini_vol, rating_vol);
 	editura e("Yen Press");
 	autor a("Kugane Maruyama");
 	carte c1 = c;
-	carte c2("c", 1, 1);
+	carte c2("Overlord", nr_volume, nr_pagini_vol, rating_vol);
 	c2 = c;
 	std::cout << c;
 	editura e1 = e;
-	editura e2("e");
+	editura e2("Yen Press");
 	e2 = e;
 	std::cout << e;
 	autor a1 = a;
-	autor a2("a");
+	autor a2("Kugane Maruyama");
 	a2 = a;
 	std::cout << a;
 	c.afisare();
