@@ -37,3 +37,9 @@
 5	809	628947805	CMakeFiles/Tema_1.dir/carte.cpp.obj	ef40461a77ef229f
 0	639	628947868	CMakeFiles/Tema_1.dir/Tema_1.cpp.obj	9e7531b88ee2a0a4
 697	999	628947869	Tema_1.exe	25007733357c0484
+1	154	628948505	build.ninja	df282ff3fe49c372
+7	707	628948505	CMakeFiles/Tema_1.dir/autor.cpp.obj	30f54bb1894e11fa
+1	761	628948505	CMakeFiles/Tema_1.dir/Tema_1.cpp.obj	9e7531b88ee2a0a4
+11	797	628948505	CMakeFiles/Tema_1.dir/editura.cpp.obj	be5b8e12f70fe667
+4	826	628948506	CMakeFiles/Tema_1.dir/carte.cpp.obj	ef40461a77ef229f
+895	1118	628948506	Tema_1.exe	25007733357c0484
