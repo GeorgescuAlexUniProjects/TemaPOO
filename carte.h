@@ -1,16 +1,26 @@
 #pragma once
-#include <iostream>
+#include "Tema_2.h"
 
 class carte
 {
 private:
 	std::string nume_carte;
-	int nr_volum, nr_pagini;
+	int nr_volume;
+	/*std::vector<std::shared_ptr<int>> nr_pagini_vol;
+	std::vector<std::shared_ptr<float>> rating_vol;*/
+	std::shared_ptr<int[]> nr_pagini_vol;
+	std::shared_ptr<float[]> rating_vol;
+	int nr_pagini_total;
+	float medie_rating,medie_pagini;
+
 public:
-	carte(std::string nume_carte, int nr_volum, int nr_pagini);
-	carte(carte& cc);
+	carte(std::string nume_carte, int nr_volume, std::shared_ptr<int[]> nr_pagini_vol, std::shared_ptr<float[]> rating_vol);
+	//carte(carte& cc);
 	~carte();
-	carte& operator=(const carte& eop);
+	//carte& operator=(const carte& eop);
 	friend std::ostream& operator<<(std::ostream& out, const carte& carte);
+	int Nr_total_pagini(int nr_pagini_total);
+	float Medie_rating(float medie_rating);
+	float Medie_pagini(float medie_pagini, int nr_pagini_total);
 	void afisare();
 };

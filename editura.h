@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>
+#include "Tema_2.h"
 
 class editura
 {

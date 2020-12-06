@@ -54,7 +54,11 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 
 build cmake_object_order_depends_target_Tema_1: phony || CMakeFiles\Tema_1.dir
 
+<<<<<<< HEAD
+build CMakeFiles\Tema_1.dir\Tema_2.cpp.obj: CXX_COMPILER__Tema_1_Debug ..\..\..\Tema_2.cpp || cmake_object_order_depends_target_Tema_1
+=======
 build CMakeFiles\Tema_1.dir\Tema_1.cpp.obj: CXX_COMPILER__Tema_1_Debug ..\..\..\Tema_1.cpp || cmake_object_order_depends_target_Tema_1
+>>>>>>> master
   FLAGS = -Wall -pedantic /MDd /Zi /Ob0 /Od /RTC1 -std:c++14
   OBJECT_DIR = CMakeFiles\Tema_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Tema_1.dir
@@ -90,7 +94,11 @@ build CMakeFiles\Tema_1.dir\autor.cpp.obj: CXX_COMPILER__Tema_1_Debug ..\..\..\a
 #############################################
 # Link the executable Tema_1.exe
 
+<<<<<<< HEAD
+build Tema_1.exe: CXX_EXECUTABLE_LINKER__Tema_1_Debug CMakeFiles\Tema_1.dir\Tema_2.cpp.obj CMakeFiles\Tema_1.dir\carte.cpp.obj CMakeFiles\Tema_1.dir\editura.cpp.obj CMakeFiles\Tema_1.dir\autor.cpp.obj
+=======
 build Tema_1.exe: CXX_EXECUTABLE_LINKER__Tema_1_Debug CMakeFiles\Tema_1.dir\Tema_1.cpp.obj CMakeFiles\Tema_1.dir\carte.cpp.obj CMakeFiles\Tema_1.dir\editura.cpp.obj CMakeFiles\Tema_1.dir\autor.cpp.obj
+>>>>>>> master
   FLAGS = -Wall -pedantic /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

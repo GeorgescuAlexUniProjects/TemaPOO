@@ -20,7 +20,11 @@ CMAKE_AR:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
 
+<<<<<<< HEAD
+//No help, variable specified on the command line.
+=======
 //CXX compiler
+>>>>>>> master
 CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe
 
 //Flags used by the CXX compiler during all build types.
@@ -41,7 +45,11 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/MD /Zi /O2 /Ob1 /DNDEBUG
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
+<<<<<<< HEAD
+//No help, variable specified on the command line.
+=======
 //C compiler
+>>>>>>> master
 CMAKE_C_COMPILER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe
 
 //Flags used by the C compiler during all build types.
@@ -197,6 +205,12 @@ Tema_1_BINARY_DIR:STATIC=C:/Users/MasterEnergy/Desktop/Facultate/Programare orie
 
 //Value Computed by CMake
 Tema_1_SOURCE_DIR:STATIC=C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Repo
+<<<<<<< HEAD
+
+//No help, variable specified on the command line.
+include_directories:PATH=C:/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/Tema/Repo
+=======
+>>>>>>> master
 
 
 ########################
