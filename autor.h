@@ -1,5 +1,5 @@
 #pragma once
-#include "Tema_1.h"
+#include "Tema_2.h"
 
 class autor
 {
