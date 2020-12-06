@@ -1,46 +1,46 @@
 #include "carte.h"
 
-carte::carte(std::string nume_carte, int nr_volume, std::vector<int> nr_pagini_vol, std::vector<float> rating_vol)
+carte::carte(std::string nume_carte, int nr_volume, std::shared_ptr<int[]> nr_pagini_vol, std::shared_ptr<float[]> rating_vol)
 {
 	this->nume_carte = nume_carte;
 	this->nr_volume = nr_volume;
 	this->nr_pagini_vol = nr_pagini_vol;
 	this->rating_vol = rating_vol;
-	std::cout << "Constructor carte" << std::endl;
+	//std::cout << "Constructor carte" << std::endl;
 }
 
-carte::carte(carte& cc)
-{
-	this->nume_carte = cc.nume_carte;
-	this->nr_volume = cc.nr_volume;
-	this->nr_pagini_vol = cc.nr_pagini_vol;
-	this->rating_vol = cc.rating_vol;
-	std::cout << "Constructor copiere carte" << std::endl;
-}
+//carte::carte(carte& cc)
+//{
+//	this->nume_carte = cc.nume_carte;
+//	this->nr_volume = cc.nr_volume;
+//	this->nr_pagini_vol = cc.nr_pagini_vol;
+//	this->rating_vol = cc.rating_vol;
+//	std::cout << "Constructor copiere carte" << std::endl;
+//}
 
 carte::~carte()
 {
-	std::cout << "Destructor carte" << std::endl;
+	//std::cout << "Destructor carte" << std::endl;
 }
 
-carte& carte::operator=(const carte& eop)
-{
-	std::cout << "Operator=(Nume carete) " << nume_carte << "=" << eop.nume_carte << std::endl;
-	this->nume_carte = eop.nume_carte;
-	std::cout << "Operator=(Numar volume) " << nr_volume << "=" << eop.nr_volume << std::endl;
-	this->nr_volume = eop.nr_volume;
-	for (int i = 0; i < nr_volume; i++)
-	{
-		std::cout << "Operator=(Numar pagini volum) " << nr_pagini_vol[i] << "=" << eop.nr_pagini_vol[i] << std::endl;
-	}
-	this->nr_pagini_vol = eop.nr_pagini_vol;
-	for (int i = 0; i < nr_volume; i++)
-	{
-		std::cout << "Operator=(Rating volum) " << rating_vol[i] << "=" << eop.rating_vol[i] << std::endl;
-	}
-	this->rating_vol = eop.rating_vol;
-	return *this;
-}
+//carte& carte::operator=(const carte& eop)
+//{
+//	std::cout << "Operator=(Nume carete) " << nume_carte << "=" << eop.nume_carte << std::endl;
+//	this->nume_carte = eop.nume_carte;
+//	std::cout << "Operator=(Numar volume) " << nr_volume << "=" << eop.nr_volume << std::endl;
+//	this->nr_volume = eop.nr_volume;
+//	for (int i = 0; i < nr_volume; i++)
+//	{
+//		std::cout << "Operator=(Numar pagini volum) " << nr_pagini_vol[i] << "=" << eop.nr_pagini_vol[i] << std::endl;
+//	}
+//	this->nr_pagini_vol = eop.nr_pagini_vol;
+//	for (int i = 0; i < nr_volume; i++)
+//	{
+//		std::cout << "Operator=(Rating volum) " << rating_vol[i] << "=" << eop.rating_vol[i] << std::endl;
+//	}
+//	this->rating_vol = eop.rating_vol;
+//	return *this;
+//}
 
 int carte::Nr_total_pagini(int nr_pagini_total)
 {
@@ -71,15 +71,15 @@ float carte::Medie_pagini(float medie_pagini, int nr_pagini_total)
 
 void carte::afisare()
 {
-	std::cout << nume_carte << std::endl << "Numar volume: " << nr_volume << std::endl;
-	std::cout << "Numar pagini / Rating pe volum" << std::endl;
+	std::cout << "Carte: " << nume_carte << std::endl << "\tNumar volume: " << nr_volume << std::endl;
+	std::cout << "\tNumar pagini / Rating pe volum" << std::endl;
 	for (int i = 0; i < nr_volume; i++)
 	{
-		std::cout << i << ": " << nr_pagini_vol[i] << " / " << rating_vol[i] << std::endl;
+		std::cout << "\t\t" << i << ": " << nr_pagini_vol[i] << " / " << rating_vol[i] << std::endl;
 	}
-	std::cout << "Numar total de pagini: " << Nr_total_pagini(nr_pagini_total) << std::endl;
-	std::cout << "Medie pagini: " << Medie_pagini(medie_pagini, nr_pagini_total) << std::endl;
-	std::cout << "Medie rating: " << Medie_rating(medie_rating) << std::endl;
+	std::cout << "\t\tNumar total de pagini: " << Nr_total_pagini(nr_pagini_total) << std::endl;
+	std::cout << "\t\tMedie pagini: " << Medie_pagini(medie_pagini, nr_pagini_total) << std::endl;
+	std::cout << "\t\tMedie rating: " << Medie_rating(medie_rating) << std::endl;
 }
 
 std::ostream& operator<<(std::ostream& out, const carte& carte)
