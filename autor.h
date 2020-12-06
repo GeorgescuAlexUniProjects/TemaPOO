@@ -7,9 +7,9 @@ private:
 	std::string nume_autor;
 public:
 	autor(std::string nume_autor);
-	autor(autor& cc);
+	//autor(autor& cc);
 	~autor();
-	autor& operator=(const autor& eop);
+	//autor& operator=(const autor& eop);
 	friend std::ostream& operator<<(std::ostream& out, const autor& autor);
 	void afisare();
 };
