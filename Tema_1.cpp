@@ -8,8 +8,6 @@ int main()
 	int nr_volume = 4;
 	std::vector<int> nr_pagini_vol = { 288 , 241 , 300 , 341 };
 	std::vector<float> rating_vol = { 8.5 , 9 , 7.5 , 9.5 };
-	int nr_pagini_total = 0;
-	float medie_rating = 0, medie_pagini = 0;
 	carte c("Overlord", nr_volume, nr_pagini_vol, rating_vol);
 	editura e("Yen Press");
 	autor a("Kugane Maruyama");
