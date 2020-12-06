@@ -24,12 +24,14 @@ int main()
 		{
 			if (nr_pagini_vol[i] < 0)
 			{
-				throw nr_pagini_vol[i];
+				throw std::exception("");
 			}
 		}
-		catch (std::shared_ptr<int[]> nr_pagini_vol)
+		catch (std::exception& err_pagini)
 		{
-			std::cout << "Exceptie pe valoare: " << nr_pagini_vol[i] << std::endl << "Numar de pagini negativ" << std::endl;
+			std::cout << "Exceptie pe valoare: " << nr_pagini_vol[i] << std::endl << "Valoare negativa";
+			std::cerr << err_pagini.what() << std::endl;
+			return -1;
 		}
 		/*date_carte >> aux_f;
 		rating_vol.emplace_back(aux_f);*/
@@ -38,13 +40,13 @@ int main()
 		{
 			if (rating_vol[i] > 10 || rating_vol[i] < 0 )
 			{
-				throw rating_vol[i];
+				throw std::exception("");
 			}
 		}
-		catch (std::shared_ptr<float[]> rating_vol)
+		catch (std::exception& err_rating)
 		{
 			std::cout << "Exceptie pe valoare: " << rating_vol[i] << std::endl;
-			if (rating_vol[i] < 10)
+			if (rating_vol[i] > 10)
 			{
 				std::cout << "Valoare rating prea mare";
 			}
@@ -52,6 +54,8 @@ int main()
 			{
 				std::cout << "Valoare rating prea mica";
 			}
+			std::cerr << err_rating.what() << std::endl;
+			return -1;
 		}
 	}
 	date_carte.close();

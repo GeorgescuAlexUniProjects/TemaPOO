@@ -5,3 +5,4 @@
 #include <fstream>
 #include <string>
 #include <memory>
+#include <exception>
