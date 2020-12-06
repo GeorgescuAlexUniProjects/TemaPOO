@@ -341,3 +341,4 @@ healthchecksdb
 
 # CMake
 cmake-build-*/
+*.json
