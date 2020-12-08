@@ -1,0 +1,21 @@
+# ninja log v5
+0	594	629134223	CMakeFiles/TemaPOO.dir/TemaPOO.cpp.obj	5883936347498c72
+594	996	629134223	TemaPOO.exe	7759848c0c47dc71
+10	738	629136930	CMakeFiles/TemaPOO.dir/editura.cpp.obj	62fe42cf69540789
+0	807	629136930	CMakeFiles/TemaPOO.dir/carte.cpp.obj	de6f0af549ba35a9
+4	816	629136930	CMakeFiles/TemaPOO.dir/autor.cpp.obj	923d01b347d71e2c
+7	866	629136930	CMakeFiles/TemaPOO.dir/TemaPOO.cpp.obj	5883936347498c72
+866	1055	629136930	TemaPOO.exe	67b20763cc7f932b
+1	480	629136998	CMakeFiles/TemaPOO.dir/TemaPOO.cpp.obj	5883936347498c72
+481	654	629136998	TemaPOO.exe	67b20763cc7f932b
+1	191	629137087	build.ninja	e8e0983f39730fe6
+6	1017	629137088	CMakeFiles/TemaPOO.dir/autor.cpp.obj	8d495f775e71a4e2
+3	1066	629137088	CMakeFiles/TemaPOO.dir/carte.cpp.obj	93474a10a99ac3b0
+9	1135	629137088	CMakeFiles/TemaPOO.dir/editura.cpp.obj	c045b44ab2cc1347
+1	1139	629137088	CMakeFiles/TemaPOO.dir/TemaPOO.cpp.obj	a247d718812748a2
+1231	1519	629137088	TemaPOO.exe	67b20763cc7f932b
+4	949	629137709	CMakeFiles/TemaPOO.dir/autor.cpp.obj	8d495f775e71a4e2
+12	979	629137709	CMakeFiles/TemaPOO.dir/editura.cpp.obj	c045b44ab2cc1347
+8	1021	629137709	CMakeFiles/TemaPOO.dir/carte.cpp.obj	93474a10a99ac3b0
+1	1044	629137709	CMakeFiles/TemaPOO.dir/TemaPOO.cpp.obj	a247d718812748a2
+1076	1299	629137709	TemaPOO.exe	67b20763cc7f932b
