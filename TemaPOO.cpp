@@ -6,10 +6,6 @@
 int main()
 {
 	std::ifstream date_carte("../../../info_carte.txt");
-	if (date_carte.is_open())
-	{
-		std::cout << "open";
-	}
 	std::string nume_carte, nume_autor, nume_editura;
 	std::getline(date_carte, nume_carte, ' ');
 	int nr_volume;
