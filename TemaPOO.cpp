@@ -8,13 +8,16 @@ int main()
 	std::ifstream date_carte("../../../info_carte.txt");
 	std::string nume_carte, nume_autor, nume_editura;
 	std::getline(date_carte, nume_carte, ' ');
-	int nr_volume;
+	int nr_volume = 0;
 	date_carte >> nr_volume;
-	std::shared_ptr<int[]> nr_pagini_vol(new int[nr_volume]);
-	std::shared_ptr<float[]> rating_vol(new float[nr_volume]);
+	int aux_i = 0;
+	float aux_f = 0;
+	std::vector<int> nr_pagini_vol = {};
+	std::vector<float> rating_vol = {};
 	for (int i = 0; i < nr_volume; i++)
 	{
-		date_carte >> nr_pagini_vol[i];
+		date_carte >> aux_i;
+		nr_pagini_vol.emplace_back(aux_i);
 		try
 		{
 			if (nr_pagini_vol[i] < 0)
@@ -28,7 +31,8 @@ int main()
 			std::cerr << err_pagini.what() << std::endl;
 			return -1;
 		}
-		date_carte >> rating_vol[i];
+		date_carte >> aux_f;
+		rating_vol.emplace_back(aux_f);
 		try
 		{
 			if (rating_vol[i] > 10 || rating_vol[i] < 0)

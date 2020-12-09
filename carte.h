@@ -1,8 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include <numeric>
-#include <memory>
+//#include <memory>
 #include <exception>
 
 class carte
@@ -10,13 +9,13 @@ class carte
 private:
 	std::string nume_carte = "";
 	int nr_volume = 0;
-	std::shared_ptr<int[]> nr_pagini_vol = {};
-	std::shared_ptr<float[]> rating_vol = {};
+	std::vector<int> nr_pagini_vol = {};
+	std::vector<float> rating_vol = {};
 	int nr_pagini_total = 0;
 	float medie_rating = 0, medie_pagini = 0;
 
 public:
-	carte(std::string nume_carte, int nr_volume, std::shared_ptr<int[]> nr_pagini_vol, std::shared_ptr<float[]> rating_vol);
+	carte(std::string nume_carte, int nr_volume, std::vector<int> nr_pagini_vol, std::vector<float> rating_vol);
 	//carte(carte& cc);
 	~carte();
 	//carte& operator=(const carte& eop);
