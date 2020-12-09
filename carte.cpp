@@ -54,7 +54,7 @@ int carte::Nr_total_pagini(int nr_pagini_total)
 
 float carte::Medie_rating(float medie_rating)
 {
-	int rating_total = 0;
+	float rating_total = 0;
 	for (int i = 0; i < nr_volume; i++)
 	{
 		rating_total = rating_total + rating_vol[i];
@@ -119,11 +119,12 @@ void carte::afisare()
 std::ostream& operator<<(std::ostream& out, const carte& carte)
 {
 	out << "Operator<<(Nume carete) " << carte.nume_carte << std::endl;
-	out << "Operator<<(Numar volum)  " << carte.nr_volume << std::endl;
+	out << "Operator<<(Numar volum) " << carte.nr_volume << std::endl;
 	for (int i = 0; i < carte.nr_volume; i++)
 	{
 		out << "Operator<<(Numar pagini)  " << carte.nr_pagini_vol[i] << std::endl;
 		out << "Operator<<(Rating volum)  " << carte.rating_vol[i] << std::endl;
 	}
+	out << std::endl;
 	return out;
 }

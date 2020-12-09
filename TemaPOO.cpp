@@ -10,14 +10,10 @@ int main()
 	std::getline(date_carte, nume_carte, ' ');
 	int nr_volume;
 	date_carte >> nr_volume;
-	/*std::vector<std::shared_ptr<int>> nr_pagini_vol;
-	std::vector<std::shared_ptr<float>> rating_vol;*/
 	std::shared_ptr<int[]> nr_pagini_vol(new int[nr_volume]);
 	std::shared_ptr<float[]> rating_vol(new float[nr_volume]);
 	for (int i = 0; i < nr_volume; i++)
 	{
-		/*date_carte >> aux_i;
-		nr_pagini_vol.emplace_back(aux_i);*/
 		date_carte >> nr_pagini_vol[i];
 		try
 		{
@@ -32,8 +28,6 @@ int main()
 			std::cerr << err_pagini.what() << std::endl;
 			return -1;
 		}
-		/*date_carte >> aux_f;
-		rating_vol.emplace_back(aux_f);*/
 		date_carte >> rating_vol[i];
 		try
 		{

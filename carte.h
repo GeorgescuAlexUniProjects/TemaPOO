@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include <numeric>
 #include <memory>
 #include <exception>
 
@@ -8,8 +10,6 @@ class carte
 private:
 	std::string nume_carte = "";
 	int nr_volume = 0;
-	/*std::vector<std::shared_ptr<int>> nr_pagini_vol;
-	std::vector<std::shared_ptr<float>> rating_vol;*/
 	std::shared_ptr<int[]> nr_pagini_vol = {};
 	std::shared_ptr<float[]> rating_vol = {};
 	int nr_pagini_total = 0;
