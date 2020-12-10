@@ -275,12 +275,12 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2020-12-09 15:42:23</td>
+            <td class="headerValue">2020-12-10 10:31:36</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">29</td>
-            <td class="headerTableEntry">106</td>
-            <td class="headerTableEntry" style="background-color:LightPink">27.4 %</td>
+            <td class="headerTableEntry">31</td>
+            <td class="headerTableEntry">108</td>
+            <td class="headerTableEntry" style="background-color:LightPink">28.7 %</td>
           </tr>
         </table>
       </td>
@@ -399,16 +399,16 @@
 
     <tr>
     <td align="right" class="lineno"><pre>15</pre></td>
-    <td align="right" class="linebranch"></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>	std::vector&lt;int&gt; nr_pagini_vol = {};</pre></td>
+    <td align="left" class="src coveredLine"><pre>	auto nr_pagini_vol = std::make_unique&lt;std::vector&lt;int&gt;&gt;(nr_volume);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>16</pre></td>
-    <td align="right" class="linebranch"></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>	std::vector&lt;float&gt; rating_vol = {};</pre></td>
+    <td align="left" class="src coveredLine"><pre>	auto rating_vol = std::make_unique&lt;std::vector&lt;float&gt;&gt;(nr_volume);</pre></td>
     </tr>
 
     <tr>
@@ -436,7 +436,7 @@
     <td align="right" class="lineno"><pre>20</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		nr_pagini_vol.emplace_back(aux_i);</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>		nr_pagini_vol-&gt;emplace_back(aux_i);</pre></td>
     </tr>
 
     <tr>
@@ -457,7 +457,7 @@
     <td align="right" class="lineno"><pre>23</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>			if (nr_pagini_vol[i] &lt; 0)</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>			if (aux_i &lt; 0)</pre></td>
     </tr>
 
     <tr>
@@ -506,7 +506,7 @@
     <td align="right" class="lineno"><pre>30</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>			std::cout &lt;&lt; "Exceptie pe valoare: " &lt;&lt; nr_pagini_vol[i] &lt;&lt; std::endl &lt;&lt; "Valoare negativa";</pre></td>
+    <td align="left" class="src "><pre>			std::cout &lt;&lt; "Exceptie pe valoare: " &lt;&lt; aux_i &lt;&lt; std::endl &lt;&lt; "Valoare negativa";</pre></td>
     </tr>
 
     <tr>
@@ -541,7 +541,7 @@
     <td align="right" class="lineno"><pre>35</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		rating_vol.emplace_back(aux_f);</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>		rating_vol-&gt;emplace_back(aux_f);</pre></td>
     </tr>
 
     <tr>
@@ -562,7 +562,7 @@
     <td align="right" class="lineno"><pre>38</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>			if (rating_vol[i] &gt; 10 || rating_vol[i] &lt; 0)</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>			if (aux_f &gt; 10 || aux_f &lt; 0)</pre></td>
     </tr>
 
     <tr>
@@ -611,14 +611,14 @@
     <td align="right" class="lineno"><pre>45</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>			std::cout &lt;&lt; "Exceptie pe valoare: " &lt;&lt; rating_vol[i] &lt;&lt; std::endl;</pre></td>
+    <td align="left" class="src "><pre>			std::cout &lt;&lt; "Exceptie pe valoare: " &lt;&lt; aux_f &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>46</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>			if (rating_vol[i] &gt; 10)</pre></td>
+    <td align="left" class="src "><pre>			if (aux_f &gt; 10)</pre></td>
     </tr>
 
     <tr>
@@ -707,9 +707,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>59</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 7 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 8 not taken">&cross;</span><span class="takenBranch" title="Branch 10 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 11 not taken">&cross;</span><br/></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 6 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 9 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="takenBranch" title="Branch 12 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 13 not taken">&cross;</span><br/></td>
     <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>	carte c(nume_carte, nr_volume, nr_pagini_vol, rating_vol);</pre></td>
+    <td align="left" class="src coveredLine"><pre>	carte c(nume_carte, nr_volume, *nr_pagini_vol, *rating_vol);</pre></td>
     </tr>
 
     <tr>
