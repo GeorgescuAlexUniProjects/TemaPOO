@@ -3,5 +3,5 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
-//#include <memory>
+#include <memory>
 #include <exception>

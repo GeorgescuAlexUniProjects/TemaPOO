@@ -57,25 +57,25 @@ build cmake_object_order_depends_target_TemaPOO: phony || CMakeFiles/TemaPOO.dir
 
 build CMakeFiles/TemaPOO.dir/TemaPOO.cpp.o: CXX_COMPILER__TemaPOO_Debug ../../../TemaPOO.cpp || cmake_object_order_depends_target_TemaPOO
   DEP_FILE = CMakeFiles/TemaPOO.dir/TemaPOO.cpp.o.d
-  FLAGS = -Wall -pedantic -std=c++98 -pedantic -Wall -Wextra -Weffc++ -Werror -g -std=gnu++14
+  FLAGS = -Wall -pedantic -Wextra -Weffc++ -Werror -std=c++14 -pedantic -Wall -Wextra -Weffc++ -Werror -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/TemaPOO.dir
   OBJECT_FILE_DIR = CMakeFiles/TemaPOO.dir
 
 build CMakeFiles/TemaPOO.dir/carte.cpp.o: CXX_COMPILER__TemaPOO_Debug ../../../carte.cpp || cmake_object_order_depends_target_TemaPOO
   DEP_FILE = CMakeFiles/TemaPOO.dir/carte.cpp.o.d
-  FLAGS = -Wall -pedantic -std=c++98 -pedantic -Wall -Wextra -Weffc++ -Werror -g -std=gnu++14
+  FLAGS = -Wall -pedantic -Wextra -Weffc++ -Werror -std=c++14 -pedantic -Wall -Wextra -Weffc++ -Werror -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/TemaPOO.dir
   OBJECT_FILE_DIR = CMakeFiles/TemaPOO.dir
 
 build CMakeFiles/TemaPOO.dir/autor.cpp.o: CXX_COMPILER__TemaPOO_Debug ../../../autor.cpp || cmake_object_order_depends_target_TemaPOO
   DEP_FILE = CMakeFiles/TemaPOO.dir/autor.cpp.o.d
-  FLAGS = -Wall -pedantic -std=c++98 -pedantic -Wall -Wextra -Weffc++ -Werror -g -std=gnu++14
+  FLAGS = -Wall -pedantic -Wextra -Weffc++ -Werror -std=c++14 -pedantic -Wall -Wextra -Weffc++ -Werror -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/TemaPOO.dir
   OBJECT_FILE_DIR = CMakeFiles/TemaPOO.dir
 
 build CMakeFiles/TemaPOO.dir/editura.cpp.o: CXX_COMPILER__TemaPOO_Debug ../../../editura.cpp || cmake_object_order_depends_target_TemaPOO
   DEP_FILE = CMakeFiles/TemaPOO.dir/editura.cpp.o.d
-  FLAGS = -Wall -pedantic -std=c++98 -pedantic -Wall -Wextra -Weffc++ -Werror -g -std=gnu++14
+  FLAGS = -Wall -pedantic -Wextra -Weffc++ -Werror -std=c++14 -pedantic -Wall -Wextra -Weffc++ -Werror -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/TemaPOO.dir
   OBJECT_FILE_DIR = CMakeFiles/TemaPOO.dir
 
@@ -88,7 +88,7 @@ build CMakeFiles/TemaPOO.dir/editura.cpp.o: CXX_COMPILER__TemaPOO_Debug ../../..
 # Link the executable TemaPOO
 
 build TemaPOO: CXX_EXECUTABLE_LINKER__TemaPOO_Debug CMakeFiles/TemaPOO.dir/TemaPOO.cpp.o CMakeFiles/TemaPOO.dir/carte.cpp.o CMakeFiles/TemaPOO.dir/autor.cpp.o CMakeFiles/TemaPOO.dir/editura.cpp.o
-  FLAGS = -Wall -pedantic -std=c++98 -pedantic -Wall -Wextra -Weffc++ -Werror -g
+  FLAGS = -Wall -pedantic -Wextra -Weffc++ -Werror -std=c++14 -pedantic -Wall -Wextra -Weffc++ -Werror -g
   OBJECT_DIR = CMakeFiles/TemaPOO.dir
   POST_BUILD = :
   PRE_LINK = :

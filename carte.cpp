@@ -1,6 +1,6 @@
 #include "carte.h"
 
-carte::carte(std::string nume_carte, int nr_volume, std::vector<int> nr_pagini_vol, std::vector<float> rating_vol)
+carte::carte(std::string nume_carte, int nr_volume, const std::vector<int> nr_pagini_vol, const std::vector<float> rating_vol)
 {
 	this->nume_carte = nume_carte;
 	this->nr_volume = nr_volume;
