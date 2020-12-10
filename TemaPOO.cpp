@@ -12,38 +12,38 @@ int main()
 	date_carte >> nr_volume;
 	int aux_i = 0;
 	float aux_f = 0;
-	std::vector<int> nr_pagini_vol = {};
-	std::vector<float> rating_vol = {};
+	auto nr_pagini_vol = std::make_unique<std::vector<int>>(nr_volume);
+	auto rating_vol = std::make_unique<std::vector<float>>(nr_volume);
 	for (int i = 0; i < nr_volume; i++)
 	{
 		date_carte >> aux_i;
-		nr_pagini_vol.emplace_back(aux_i);
+		nr_pagini_vol->emplace_back(aux_i);
 		try
 		{
-			if (nr_pagini_vol[i] < 0)
+			if (aux_i < 0)
 			{
 				throw std::exception();
 			}
 		}
 		catch (std::exception& err_pagini)
 		{
-			std::cout << "Exceptie pe valoare: " << nr_pagini_vol[i] << std::endl << "Valoare negativa";
+			std::cout << "Exceptie pe valoare: " << aux_i << std::endl << "Valoare negativa";
 			std::cerr << err_pagini.what() << std::endl;
 			return -1;
 		}
 		date_carte >> aux_f;
-		rating_vol.emplace_back(aux_f);
+		rating_vol->emplace_back(aux_f);
 		try
 		{
-			if (rating_vol[i] > 10 || rating_vol[i] < 0)
+			if (aux_f > 10 || aux_f < 0)
 			{
 				throw std::exception();
 			}
 		}
 		catch (std::exception& err_rating)
 		{
-			std::cout << "Exceptie pe valoare: " << rating_vol[i] << std::endl;
-			if (rating_vol[i] > 10)
+			std::cout << "Exceptie pe valoare: " << aux_f << std::endl;
+			if (aux_f > 10)
 			{
 				std::cout << "Valoare rating prea mare";
 			}
@@ -56,7 +56,7 @@ int main()
 		}
 	}
 	date_carte.close();
-	carte c(nume_carte, nr_volume, nr_pagini_vol, rating_vol);
+	carte c(nume_carte, nr_volume, *nr_pagini_vol, *rating_vol);
 	std::ifstream date_editura("../../info_editura.txt");
 	std::getline(date_editura, nume_editura);
 	editura e(nume_editura);
