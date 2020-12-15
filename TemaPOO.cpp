@@ -12,21 +12,21 @@ int main()
 	date_carte >> nr_volume;
 	int aux_pagini = 0;
 	float aux_rating = 0;
-	/*auto nr_pagini_vol = std::make_unique<std::vector<int>>(nr_volume);
-	auto rating_vol = std::make_unique<std::vector<float>>(nr_volume);*/
-	std::vector<int> nr_pagini_vol = {};
-	std::vector<float> rating_vol = {};
+	auto nr_pagini_vol = std::make_unique<std::vector<int>>();
+	auto rating_vol = std::make_unique<std::vector<float>>();
+	/*std::vector<int> nr_pagini_vol = {};
+	std::vector<float> rating_vol = {};*/
 	for (int i = 0; i < nr_volume; i++)
 	{
 		date_carte >> aux_pagini;
-		nr_pagini_vol.emplace_back(aux_pagini);
-		/*nr_pagini_vol->emplace_back(aux_pagini);*/
+		/*nr_pagini_vol.emplace_back(aux_pagini);*/
+		nr_pagini_vol->emplace_back(aux_pagini);
 		date_carte >> aux_rating;
-		rating_vol.emplace_back(aux_rating);
-		/*rating_vol->emplace_back(aux_rating);*/
+		/*rating_vol.emplace_back(aux_rating);*/
+		rating_vol->emplace_back(aux_rating);
 	}
 	date_carte.close();
-	carte c(nume_carte, nr_volume, nr_pagini_vol, rating_vol);
+	carte c(nume_carte, nr_volume, *nr_pagini_vol, *rating_vol);
 	std::ifstream date_editura("../../../info_editura.txt");
 	std::getline(date_editura, nume_editura);
 	editura e(nume_editura);
