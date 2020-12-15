@@ -42,9 +42,9 @@ carte::~carte()
 //	return *this;
 //}
 
-int carte::Nr_total_pagini(int nr_pagini_total)
+int carte::Nr_total_pagini()
 {
-	nr_pagini_total = 0;
+	int nr_pagini_total = 0;
 	for (int i = 0; i < nr_volume; i++)
 	{
 		nr_pagini_total = nr_pagini_total + nr_pagini_vol[i];
@@ -52,8 +52,9 @@ int carte::Nr_total_pagini(int nr_pagini_total)
 	return nr_pagini_total;
 }
 
-float carte::Medie_rating(float medie_rating)
+float carte::Medie_rating()
 {
+	float medie_rating = 0;
 	float rating_total = 0;
 	for (int i = 0; i < nr_volume; i++)
 	{
@@ -84,9 +85,10 @@ float carte::Medie_rating(float medie_rating)
 	return medie_rating;
 }
 
-float carte::Medie_pagini(float medie_pagini, int nr_pagini_total)
+float carte::Medie_pagini()
 {
-	medie_pagini = static_cast<float>(Nr_total_pagini(nr_pagini_total)) / nr_volume;
+	float medie_pagini = 0;
+	medie_pagini = static_cast<float>(Nr_total_pagini()) / nr_volume;
 	try
 	{
 		if (medie_pagini < 0)
@@ -111,9 +113,9 @@ void carte::afisare()
 	{
 		std::cout << "\t\t" << i << ": " << nr_pagini_vol[i] << " / " << rating_vol[i] << std::endl;
 	}
-	std::cout << "\t\tNumar total de pagini: " << Nr_total_pagini(nr_pagini_total) << std::endl;
-	std::cout << "\t\tMedie pagini: " << Medie_pagini(medie_pagini, nr_pagini_total) << std::endl;
-	std::cout << "\t\tMedie rating: " << Medie_rating(medie_rating) << std::endl;
+	std::cout << "\t\tNumar total de pagini: " << Nr_total_pagini() << std::endl;
+	std::cout << "\t\tMedie pagini: " << Medie_pagini() << std::endl;
+	std::cout << "\t\tMedie rating: " << Medie_rating() << std::endl;
 }
 
 std::ostream& operator<<(std::ostream& out, const carte& carte)
