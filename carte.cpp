@@ -61,26 +61,9 @@ float carte::Medie_rating()
 		rating_total = rating_total + rating_vol[i];
 	}
 	medie_rating = static_cast<float>(rating_total) / nr_volume;
-	try
+	if (medie_rating < 0 || medie_rating > 10)
 	{
-		if (medie_rating < 0 || medie_rating > 10)
-		{
-			throw std::exception();
-		}
-	}
-	catch (std::exception& err_medie_rating)
-	{
-		std::cout << "Exceptie pe valoare: " << medie_rating << std::endl;
-		if (medie_rating < 10)
-		{
-			std::cout << "Medie rating-ul este prea mare";
-		}
-		else
-		{
-			std::cout << "Medie rating-ul este prea mica";
-		}
-		std::cerr << err_medie_rating.what() << std::endl;
-		return -1;
+		throw std::runtime_error("Rating in afara limitei 0-10");
 	}
 	return medie_rating;
 }
@@ -89,18 +72,9 @@ float carte::Medie_pagini()
 {
 	float medie_pagini = 0;
 	medie_pagini = static_cast<float>(Nr_total_pagini()) / nr_volume;
-	try
+	if (medie_pagini < 0)
 	{
-		if (medie_pagini < 0)
-		{
-			throw std::exception();
-		}
-	}
-	catch (std::exception& err_medie_pagini)
-	{
-		std::cout << "Exceptie in calcul medie paginilor: " << medie_pagini << std::endl << "Media de pagini este negativa";
-		std::cerr << err_medie_pagini.what() << std::endl;
-		return -1;
+		throw std::runtime_error("Numar negativ de pagini");
 	}
 	return medie_pagini;
 }
@@ -114,8 +88,16 @@ void carte::afisare()
 		std::cout << "\t\t" << i << ": " << nr_pagini_vol[i] << " / " << rating_vol[i] << std::endl;
 	}
 	std::cout << "\t\tNumar total de pagini: " << Nr_total_pagini() << std::endl;
-	std::cout << "\t\tMedie pagini: " << Medie_pagini() << std::endl;
-	std::cout << "\t\tMedie rating: " << Medie_rating() << std::endl;
+	try
+	{
+		std::cout << "\t\tMedie pagini: " << Medie_pagini() << std::endl;
+		std::cout << "\t\tMedie rating: " << Medie_rating() << std::endl;
+	}
+	catch (std::runtime_error& err_calcul)
+	{
+		std::cout << "Eroare in calcul" << std::endl;
+		std::cerr << err_calcul.what() << std::endl;
+	}
 }
 
 std::ostream& operator<<(std::ostream& out, const carte& carte)
