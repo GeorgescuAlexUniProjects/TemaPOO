@@ -5,7 +5,7 @@
 
 int main()
 {
-	std::ifstream date_carte("../../../info_carte.txt");
+	std::ifstream date_carte("info_carte.txt");
 	std::string nume_carte, nume_autor, nume_editura;
 	std::getline(date_carte, nume_carte, ' ');
 	int nr_volume = 0;
@@ -27,11 +27,11 @@ int main()
 	}
 	date_carte.close();
 	carte c(nume_carte, nr_volume, *nr_pagini_vol, *rating_vol);
-	std::ifstream date_editura("../../../info_editura.txt");
+	std::ifstream date_editura("info_editura.txt");
 	std::getline(date_editura, nume_editura);
 	editura e(nume_editura);
 	date_editura.close();
-	std::ifstream date_autor("../../../info_autor.txt");
+	std::ifstream date_autor("info_autor.txt");
 	std::getline(date_autor, nume_autor);
 	date_autor.close();
 	autor a(nume_autor);
