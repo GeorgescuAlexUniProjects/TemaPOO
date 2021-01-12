@@ -1,0 +1,3 @@
+/mnt/c/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/TemaPOO/out/build/WSL-GCC-Debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/TemaPOO/out/build/WSL-GCC-Debug/CMakeFiles/Tema_1.dir
+/mnt/c/Users/MasterEnergy/Desktop/Facultate/Programare orientata pe obiecte/Laborator/TemaPOO/out/build/WSL-GCC-Debug/CMakeFiles/edit_cache.dir
