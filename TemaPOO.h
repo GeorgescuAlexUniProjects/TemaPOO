@@ -4,4 +4,3 @@
 #include <vector>
 #include <fstream>
 #include <memory>
-#include <exception>

@@ -1,10 +1,10 @@
 #include "autor.h"
 
-autor::autor(std::string nume_autor)
-{
-	this->nume_autor = nume_autor;
-	//std::cout << "Constructor autor" << std::endl;
-}
+//autor::autor(std::string nume_autor)
+//{
+//	this->nume_autor = nume_autor;
+//	//std::cout << "Constructor autor" << std::endl;
+//}
 
 //autor::autor(autor& cc)
 //{
@@ -26,11 +26,18 @@ autor::~autor()
 
 void autor::afisare()
 {
-	std::cout << "Autor: " << nume_autor << std::endl;
+	//std::cout << "Autor: " << nume_autor << std::endl;
 }
 
 std::ostream& operator<<(std::ostream& out, const autor& autor)
 {
-	out << "Operator<<(Nume autor) " << autor.nume_autor << std::endl;
+	//out << "Operator<<(Nume autor) " << autor.nume_autor << std::endl;
+	out << autor.nume_autor;// << std::endl;
 	return out;
+}
+
+std::istream& operator>>(std::istream& in, autor& autor)
+{
+	in >> autor.nume_autor;
+	return in;
 }

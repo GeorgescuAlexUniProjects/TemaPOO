@@ -5,42 +5,40 @@
 
 int main()
 {
-	std::ifstream date_carte("info_carte.txt");
-	std::string nume_carte, nume_autor, nume_editura;
-	std::getline(date_carte, nume_carte, ' ');
-	int nr_volume = 0;
-	date_carte >> nr_volume;
-	int aux_pagini = 0;
-	float aux_rating = 0;
-	auto nr_pagini_vol = std::make_unique<std::vector<int>>();
-	auto rating_vol = std::make_unique<std::vector<float>>();
-	/*std::vector<int> nr_pagini_vol = {};
-	std::vector<float> rating_vol = {};*/
-	for (int i = 0; i < nr_volume; i++)
+	std::vector<carte*> carte;
+	std::ifstream date_carte("informati.txt");
+	int nr_carti = 0, nr_volume = 0, nr_pagini = 0;
+	std::vector<int> pagini;
+	std::string tip_carte, nume_carte;
+	date_carte >> nr_carti;
+	for(int i = 0; i < nr_carti; i++)
 	{
-		date_carte >> aux_pagini;
-		/*nr_pagini_vol.emplace_back(aux_pagini);*/
-		nr_pagini_vol->emplace_back(aux_pagini);
-		date_carte >> aux_rating;
-		/*rating_vol.emplace_back(aux_rating);*/
-		rating_vol->emplace_back(aux_rating);
+		autor n_autor;
+		editura n_editura;
+		date_carte >> tip_carte;
+		if(tip_carte == "fictiune")
+		{
+			date_carte >> nume_carte >> n_autor >> n_editura >> nr_volume;
+			for (int i = 0; i < nr_volume; i++)
+			{
+				date_carte >> nr_pagini;
+				pagini.push_back(nr_pagini);
+			}
+			carte.push_back(new c_fictiune(nume_carte, n_autor, n_editura, nr_volume, pagini));
+		}
+		else if (tip_carte == "non-fictiune")
+		{
+			date_carte >> nume_carte >> n_autor >> n_editura >> nr_pagini;
+			carte.push_back(new c_n_fictiune(nume_carte, n_autor, n_editura, nr_pagini));
+		}
 	}
-	date_carte.close();
-	carte c(nume_carte, nr_volume, *nr_pagini_vol, *rating_vol);
-	std::ifstream date_editura("info_editura.txt");
-	std::getline(date_editura, nume_editura);
-	editura e(nume_editura);
-	date_editura.close();
-	std::ifstream date_autor("info_autor.txt");
-	std::getline(date_autor, nume_autor);
-	date_autor.close();
-	autor a(nume_autor);
-	editura e1 = e;
-	editura e2(nume_editura);
-	e2 = e;
-	std::cout << e;
-	e.afisare();
-	a.afisare();
-	c.afisare();
+	for (int i = 0; i < nr_carti; i++)
+	{
+		std::cout << *carte[i];
+	}
+	for (int i = 0; i < nr_carti; i++)
+	{
+		delete carte[i];
+	}
 	return 0;
 }
