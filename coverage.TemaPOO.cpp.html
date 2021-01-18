@@ -275,12 +275,12 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2021-01-12 19:00:24</td>
+            <td class="headerValue">2021-01-18 20:01:58</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">39</td>
-            <td class="headerTableEntry">68</td>
-            <td class="headerTableEntry" style="background-color:LightPink">57.4 %</td>
+            <td class="headerTableEntry">40</td>
+            <td class="headerTableEntry">70</td>
+            <td class="headerTableEntry" style="background-color:LightPink">57.1 %</td>
           </tr>
         </table>
       </td>
@@ -371,9 +371,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>11</pre></td>
-    <td align="right" class="linebranch"></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>	std::vector&lt;int&gt; pagini;</pre></td>
+    <td align="left" class="src coveredLine"><pre>	auto pagini = std::make_unique&lt;std::vector&lt;int&gt;&gt;();</pre></td>
     </tr>
 
     <tr>
@@ -394,7 +394,7 @@
     <td align="right" class="lineno"><pre>14</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 2 times">&check;</span><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span></td>
     <td align="right" class="linecount coveredLine"><pre>3</pre></td>
-    <td align="left" class="src coveredLine"><pre>	for(int i = 0; i &lt; nr_carti; i++)</pre></td>
+    <td align="left" class="src coveredLine"><pre>	for (int i = 0; i &lt; nr_carti; i++)</pre></td>
     </tr>
 
     <tr>
@@ -429,7 +429,7 @@
     <td align="right" class="lineno"><pre>19</pre></td>
     <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="takenBranch" title="Branch 2 taken 1 times">&check;</span></td>
     <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>		if(tip_carte == "fictiune")</pre></td>
+    <td align="left" class="src coveredLine"><pre>		if (tip_carte == "fictiune")</pre></td>
     </tr>
 
     <tr>
@@ -469,9 +469,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>25</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 3 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
     <td align="right" class="linecount coveredLine"><pre>3</pre></td>
-    <td align="left" class="src coveredLine"><pre>				pagini.push_back(nr_pagini);</pre></td>
+    <td align="left" class="src coveredLine"><pre>				pagini-&gt;push_back(nr_pagini);</pre></td>
     </tr>
 
     <tr>
@@ -483,9 +483,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>27</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 7 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 8 not taken">&cross;</span><span class="takenBranch" title="Branch 10 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 11 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 13 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 14 not taken">&cross;</span><span class="takenBranch" title="Branch 16 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 17 not taken">&cross;</span><br/></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 8 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 9 not taken">&cross;</span><span class="takenBranch" title="Branch 11 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 12 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 14 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 15 not taken">&cross;</span><span class="takenBranch" title="Branch 17 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 18 not taken">&cross;</span><br/></td>
     <td align="right" class="linecount coveredLine"><pre>1</pre></td>
-    <td align="left" class="src coveredLine"><pre>			carte.push_back(new c_fictiune(nume_carte, n_autor, n_editura, nr_volume, pagini));</pre></td>
+    <td align="left" class="src coveredLine"><pre>			carte.push_back(new c_fictiune(nume_carte, n_autor, n_editura, nr_volume, *pagini));</pre></td>
     </tr>
 
     <tr>
