@@ -8,7 +8,7 @@ int main()
 	std::vector<carte*> carte;
 	std::ifstream date_carte("informati.txt");
 	int nr_carti = 0, nr_volume = 0, nr_pagini = 0;
-	std::vector<int> pagini;
+	auto pagini = std::make_unique<std::vector<int>>();
 	std::string tip_carte, nume_carte;
 	date_carte >> nr_carti;
 	for(int i = 0; i < nr_carti; i++)
@@ -22,9 +22,9 @@ int main()
 			for (int i = 0; i < nr_volume; i++)
 			{
 				date_carte >> nr_pagini;
-				pagini.push_back(nr_pagini);
+				pagini->push_back(nr_pagini);
 			}
-			carte.push_back(new c_fictiune(nume_carte, n_autor, n_editura, nr_volume, pagini));
+			carte.push_back(new c_fictiune(nume_carte, n_autor, n_editura, nr_volume, *pagini));
 		}
 		else if (tip_carte == "non-fictiune")
 		{
