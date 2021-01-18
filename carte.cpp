@@ -2,9 +2,9 @@
 
 void carte::afisare(std::ostream& out) const
 {
-	out << "Carte: " << nume_carte << std::endl;
-	out << "\tAutor: " << nume_autor << std::endl;
-	out << "\tEditura: " << nume_editura << std::endl;
+	out << "Coperta: " << coperta << std::endl;
+	out << "Tip: " << tip << std::endl;
+	out << "Dimensiune: " << dimensiune << std::endl;
 }
 
 std::ostream& operator<<(std::ostream& out, const carte& carte)
@@ -37,6 +37,9 @@ float c_fictiune::Medie_pagini() const
 void c_fictiune::afisare(std::ostream& out) const
 {
 	carte::afisare(out);
+	out << "Carte: " << nume_carte << std::endl;
+	out << "\tAutor: " << nume_autor << std::endl;
+	out << "\tEditura: " << nume_editura << std::endl;
 	out << "Numar Volume: " << nr_volume << std::endl;
 	out << "\tPagini volume: " << nr_volume << std::endl;
 	for (int i = 0; i < nr_volume; i++)
@@ -53,10 +56,14 @@ void c_fictiune::afisare(std::ostream& out) const
 		std::cout << "Eroare in calcul" << std::endl;
 		std::cerr << err_calcul.what() << std::endl;
 	}
+	out << "\tFormat: " << format<std::string>(Medie_pagini()) << std::endl;
 }
 
 void c_n_fictiune::afisare(std::ostream& out) const
 {
 	carte::afisare(out);
+	out << "Carte: " << nume_carte << std::endl;
+	out << "\tAutor: " << nume_autor << std::endl;
+	out << "\tEditura: " << nume_editura << std::endl;
 	out << "\tNumar pagini: " << nr_pagini << std::endl;
 }
