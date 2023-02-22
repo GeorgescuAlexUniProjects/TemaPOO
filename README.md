@@ -1,5 +1,7 @@
 # TemaPOO 
 
+Proiect Programare orientata pe obiecte - Anul 2 Semestrul 1
+
 Aplicatie este de tip biblioteca, ea memoreaza datele cartilor folosind un fisier
 
 Tema presupune realizarea unei aplicatii folosind concepte de Programare Orientata pe Obiecte.
